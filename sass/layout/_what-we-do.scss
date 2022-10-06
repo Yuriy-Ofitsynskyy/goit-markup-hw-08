@@ -1,0 +1,40 @@
+.section.about {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+.section.about {
+  padding-top: 0;
+}
+
+.what-we-do__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.what-we-do__list-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.what-we-do__img-wrapper {
+  position: relative;
+}
+
+.what-we-do__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  padding: 27px;
+  background-color: var(--what-we-do-overlay-bc);
+  color: var(--overlay-font-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+}

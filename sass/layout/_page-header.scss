@@ -1,0 +1,24 @@
+.page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--hero-footer__street-color);
+  border-bottom: 1px solid var(--header-line);
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}

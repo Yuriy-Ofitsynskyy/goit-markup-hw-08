@@ -1,0 +1,23 @@
+@mixin font($color) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $color;
+}
+
+.logo {
+  @include font(var(--logo-color));
+  margin-right: 93px;
+}
+
+.logo__web {
+  color: var(--accent-color);
+}
+
+.footer__logo {
+  @include font(var(--hero-footer__street-color));
+  display: inline-block;
+  margin-bottom: 20px;
+}
