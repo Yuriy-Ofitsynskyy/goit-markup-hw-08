@@ -23,11 +23,6 @@
   position: relative;
   padding-left: 40px;
   padding-top: 48px;
-
-//   height: 796px;
-//   display: flex;
-//   flex-direction: column;
-//  justify-content: space-between;
 }
 
 .mobile-menu__close-btn {
@@ -48,11 +43,15 @@
 
 .mobile-menu__close-icon {
   width: 40px;
-  height: 40px;  
+  height: 40px;
 }
 
 .mobile-menu__list {
   margin-bottom: 50%;
+}
+
+.mobile-menu__list-item:not(:last-child) {
+  margin-bottom: 36px;
 }
 
 .mobile-menu__link {
@@ -67,6 +66,10 @@
 
   &:hover,
   &:focus {
+    color: var(--accent-color);
+  }
+
+  &--current {
     color: var(--accent-color);
   }
 }
@@ -126,6 +129,6 @@
 
 @media screen and (min-width: 480px) {
   .mobile-menu__list {
-  margin-bottom: 302px;
-}
+    margin-bottom: 302px;
+  }
 }

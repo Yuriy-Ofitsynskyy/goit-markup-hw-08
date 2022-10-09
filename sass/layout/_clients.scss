@@ -7,14 +7,16 @@
 }
 
 .clients-list__item {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px)/2);
 }
 
 .clients-list__logo-frame {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
-  padding: 16px 32px;
+
   height: 92px;
   transition: border var(--transition-dur-and-func);
 
@@ -37,7 +39,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-.clients-list {
-  flex-wrap: nowrap;
-}
+  .clients-list {
+    flex-wrap: nowrap;
+  }
 }

@@ -44,6 +44,16 @@
   color: var(--hero-footer__street-color);
 }
 
+.footer__street:hover,
+.footer__street:focus {
+  color: var(--accent-color);
+}
+
+.footer__contacts-link:hover,
+.footer__contacts-link:focus {
+  color: var(--accent-color);
+}
+
 .join-us {
   display: flex;
   flex-direction: column;
@@ -82,6 +92,7 @@
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 20px;
+  outline: 0;
 }
 
 .footer-form__button {
@@ -123,6 +134,26 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer__contacts {
+    width: 232px;
+    margin-left: auto;
+    margin-right: 165px;
+  }
+
+  .join-us {
+    width: 206px;
+
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     background-color: var(--footer-bgc);
@@ -138,6 +169,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     display: inline-block;
+    transition: color var(--transition-dur-and-func);
   }
 
   .footer__list-item:not(:last-child) {
@@ -149,12 +181,24 @@
   }
 
   .footer .container {
-    display: flex;
-    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .footer__contacts {
+    width: 232px;
+    margin-left: auto;
+    margin-right: 70px;
   }
 
   .join-us {
-    margin-left: 70px;
+    width: 206px;
+    margin-left: 0;
+    margin-right: 93px;
+  }
+
+  .footer-form__content {
+    display: flex;
   }
 
   .join-us__title,
@@ -218,49 +262,5 @@
   .footer-form__button-icon {
     fill: var(--items-bgc);
     margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .footer__contacts {
-    width: 232px;
-    margin-left: auto;
-    margin-right: 165px;
-  }
-
-  .join-us {
-    width: 206px;
-
-    margin-left: 0;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer .container {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
-  .footer__contacts {
-    width: 232px;
-    margin-left: auto;
-    margin-right: 70px;
-  }
-
-  .join-us {
-    width: 206px;
-
-    margin-left: 0;
-    margin-right: 93px;
-  }
-
-  .footer-form__content {
-    display: flex;
   }
 }

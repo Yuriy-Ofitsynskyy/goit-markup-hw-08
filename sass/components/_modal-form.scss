@@ -23,12 +23,13 @@
   border-radius: 4px;
   transition: border-color var(--transition-dur-and-func);
 
+  &:hover,
   &:focus {
     outline: none;
     border-color: var(--accent-color);
   }
 }
-
+.modal__form-input:hover + .modal__form-input-icon,
 .modal__form-input:focus + .modal__form-input-icon {
   fill: var(--accent-color);
 }
@@ -64,6 +65,7 @@
   letter-spacing: 0.01em;
   transition: border-color var(--transition-dur-and-func);
 
+  &:hover,
   &:focus {
     outline: none;
     border-color: var(--accent-color);
@@ -189,7 +191,7 @@
 
 @media screen and (min-width: 1200px) {
   .modal__form-check-field {
-    padding-left: 12px;
+    justify-content: center;
   }
   .checkbox-text {
     font-size: 14px;
